@@ -11,6 +11,7 @@ async fn redirect_on_form_submit() {
     info!("WireMock server running on {}", server.uri());
 
     let base_url = Url::parse(server.uri().as_str()).unwrap();
+    // let base_url = Url::parse("http://localhost:3030").unwrap();
     let login_url = base_url.join("/login").unwrap();
 
     Mock::given(method("POST"))
