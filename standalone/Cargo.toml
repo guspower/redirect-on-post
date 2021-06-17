@@ -1,5 +1,5 @@
 [package]
-name = "redirect-on-post"
+name = "standalone"
 version = "0.1.0"
 authors = ["Gus Power <gus@infinitesidequests.com>"]
 edition = "2018"
@@ -9,9 +9,7 @@ edition = "2018"
 [dependencies]
 env_logger = "0.8.4"
 log = "0.4.14"
+tokio = { version = "1", features = ["full"] }
 ureq = { version = "2.1.1", features = ["cookies", "json"] }
 url = "2.2.2"
-
-# dev-dependencies
-async-std = { version = "1.9.0", features = ["attributes"] }
-wiremock = "0.5.3"
+warp = "0.3"
