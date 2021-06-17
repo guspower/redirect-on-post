@@ -11,3 +11,4 @@ Cargo.lock
 
 # Intellij CLion
 .idea
+/standalone/target/
